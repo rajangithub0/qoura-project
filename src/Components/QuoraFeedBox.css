@@ -1,0 +1,227 @@
+.Profile-FeedBox{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 0.8rem;
+    height: auto;
+}
+.profile-info img{
+    width: 50px;
+    border-radius: 50%;
+}
+.profile-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.profile-info .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 15px;
+    /* height:40px;   */
+    /* background-color: rgb(147, 143, 143); */
+    font-weight: 300;
+    background-color: rgb(241, 241, 241);
+}
+.profile-info-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Question-feedbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid gray;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.Question-feedbox button{
+    width: 70px;
+    font-size: 0.8rem;
+    background-color: #e23a34;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 8px;
+}
+.Question-feedbox h3{
+    width: auto;
+    text-align: justify;
+    font-weight: 300;
+    cursor: pointer;
+}
+.Question-feedbox h3:hover{
+    color: #c92e29;
+}
+/* Style for the main post__answer container */
+.post__answer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    /* border: 2px solid gray; */
+    height: auto;
+    max-width: 100%; /* Adjust the maximum width as needed */
+
+  }
+  
+  /* Style for individual answer paragraphs */
+  .post__answer .answer {
+    max-width: 90%;
+    height: auto;
+    overflow: auto;
+    margin-top: 10px;
+  }
+  .post__answer .answer p{
+    text-align: justify;
+    color: gray;
+    font-weight: 300;
+  }
+  .PostUser-Profile{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    gap: 0.5rem;
+    margin: 10px;
+  }
+
+  .PostUser-Profile img{
+    width: 40px;
+    border-radius: 50%;
+  }
+  
+.Feed-footer{
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.4rem;
+}
+.vote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    padding: 5px 15px ;
+    gap: 0.7rem;
+    border-radius: 20px;
+    background-color: rgb(241, 241, 241);
+}
+.vote .MuiSvgIcon-root:hover{
+    color: #c92e29;
+}
+.vote .Upvote{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+.vote .Upvote h5{
+    font-size: 0.8rem;
+}
+.vote .Downvote{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+.Feed-footer .Message{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.Share .MuiSvgIcon-root:hover{
+    color: #c92e29;
+}
+.Feed-footer .Share{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.Message .MuiSvgIcon-root:hover{
+    color: #c92e29;
+}
+/* Modal */
+.modal-ans{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.3rem;
+    height: auto;
+    margin: 20px auto;
+}
+.modal-ans input{
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    outline: none;
+}
+.modal-btn{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+.modal-btn button{
+    width: 90px;
+    padding: 7px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    background-color: #e23a34;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Mobile */
+
+@media (max-width: 477px) {
+    .Profile-FeedBox{
+        padding: 3px;
+        margin-top: 5px;
+        gap: 0.5rem;
+
+    }
+    .profile-info img{
+    width: 40px;
+}
+.Question-feedbox button{
+    width: 67px;
+    font-size: 0.8rem;
+}
+.Question-feedbox{
+    gap: 1.3rem;   
+}
+.Question-feedbox h3{
+    padding: 4px;
+    font-weight: 300;
+}
+.Answer-feedbox .image{
+    width: 50%;
+}
+.vote .MuiSvgIcon-root{
+    font-size: 1.5rem;
+}
+.vote{
+    width: 60%;
+}
+.Message .MuiSvgIcon-root{
+    font-size: 1.5rem;
+}
+.Share .MuiSvgIcon-root{
+    font-size: 1.5rem;
+}
+}
